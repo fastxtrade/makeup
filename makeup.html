@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kajal Makeup Artist</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1427767192010478');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1427767192010478&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fafafa;
+  color: #111;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+.logo {
+  width: 90px;
+  display: block;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.location {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.services li {
+  margin-bottom: 6px;
+}
+
+.images img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button-outline {
+  background: transparent;
+  border: 1px solid #111;
+  color: #111;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="https://i.postimg.cc/BbnQ1KLr/IMG-20260414-WA0002.jpg" class="logo">
+
+<h1>Kajal Makeup Artist</h1>
+<div class="location">Pune | Baramati | Satara | Akluj</div>
+
+<!-- SERVICES -->
+<div class="section">
+<h2>Services</h2>
+<ul class="services">
+<li>Bridal Makeup</li>
+<li>Engagement Makeup</li>
+<li>Pre Wedding</li>
+<li>Party Makeup</li>
+<li>Sider Makeup</li>
+<li>Baby Shower</li>
+<li>Mehendi Makeup</li>
+<li>Event Makeup</li>
+<li>Draping / Sadi Pre Plating / Box Folding</li>
+</ul>
+<p><b>Trial Available</b></p>
+</div>
+
+<!-- DEMO -->
+<div class="section">
+<h2>Makeup Work</h2>
+<div class="images">
+<img src="https://i.postimg.cc/DwJkDg3p/IMG-20260414-WA0004.jpg">
+<img src="https://i.postimg.cc/8kt2z319/IMG-20260414-WA0003.jpg">
+<img src="https://i.postimg.cc/50Gkwc6M/IMG_5230.jpg">
+<img src="https://i.postimg.cc/Y0WDRXW3/IMG_5231.jpg">
+<img src="https://i.postimg.cc/g0g72Lph/IMG_5236.jpg">
+</div>
+</div>
+
+<!-- HAIR -->
+<div class="section">
+<h2>Hair Style</h2>
+<div class="images">
+<img src="https://i.postimg.cc/ZKD0pVct/IMG_2681.jpg">
+<img src="https://i.postimg.cc/C5hdH2tX/IMG_2683.jpg">
+<img src="https://i.postimg.cc/Bv26WsGW/IMG_2821.jpg">
+<img src="https://i.postimg.cc/4xDdFyqB/IMG_2822.jpg">
+</div>
+</div>
+
+<!-- FORM -->
+<div class="section">
+<h2>Book Appointment</h2>
+
+<input type="text" id="name" placeholder="Your Name">
+<input type="tel" id="phone" placeholder="Mobile Number">
+
+<select id="makeup">
+<option>Select Makeup Type</option>
+<option>Bridal</option>
+<option>Party</option>
+<option>Engagement</option>
+<option>Event</option>
+</select>
+
+<select id="event">
+<option>Select Event</option>
+<option>Wedding</option>
+<option>Party</option>
+<option>Function</option>
+</select>
+
+<input type="date" id="date">
+
+<button onclick="sendWhatsApp()">Submit</button>
+
+<button class="button-outline" onclick="bookTrial()">Book Trial</button>
+
+<button class="button-outline" onclick="openInstagram()">Instagram</button>
+
+</div>
+
+<div class="footer">
+Contact: 8600396104<br>
+Instagram: @kajal_makeup_artist
+</div>
+
+</div>
+
+<script>
+function sendWhatsApp() {
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let makeup = document.getElementById("makeup").value;
+let event = document.getElementById("event").value;
+let date = document.getElementById("date").value;
+
+let msg = `Name: ${name}%0A
+Phone: ${phone}%0A
+Makeup: ${makeup}%0A
+Event: ${event}%0A
+Date: ${date}`;
+
+window.open("https://wa.me/918600396104?text=" + msg);
+}
+
+function bookTrial() {
+window.open("https://wa.me/918600396104?text=Hi, मला Trial Booking हवी आहे");
+}
+
+function openInstagram() {
+window.open("https://instagram.com/kajal_makeup_artist");
+}
+</script>
+
+</body>
+</html>
